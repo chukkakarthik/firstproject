@@ -1,0 +1,222 @@
+
+
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+    all: unset;
+    display: revert;
+  }
+  
+  /* Preferred box-sizing value */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  /*
+    Remove list styles (bullets/numbers)
+    in case you use it with normalize.css
+  */
+  ol, ul {
+    list-style: none;
+  }
+  
+  /* For images to not be able to exceed their container */
+  img {
+    max-width: 100%;
+  }
+  
+  /* Removes spacing between cells in tables */
+  table {
+    border-collapse: collapse;
+  }
+  
+  /* Revert the 'white-space' property for textarea elements on Safari */
+  textarea {
+    white-space: revert;
+  }
+
+  /*my code*/
+  *{
+    text-decoration: none;
+  }
+body{
+   background-color:#fff; 
+}
+header{
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+}
+.Port-folio{
+    font-family:Merriweather ital;
+    font-size: 24px;
+    font-weight: 900;
+    color: #111;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+
+}
+header nav ul{
+    display:block ;
+    margin:0 auto;
+    width:fit-content
+}
+header nav ul li{
+   display: block;
+   float: left;
+   list-style:none;
+   padding: 0 16px;
+   
+}
+header nav ul li a{
+    font-family:cursive;
+    font-size: 16px;
+    color: #111;
+}
+.Img-mine{
+  width: 100%;
+  height: calc(100vh-100px);
+  
+  background-repeat:no-repeat ;
+  background-position: center;
+  background-size: cover;
+}
+h2{
+  font-family:Merriweather ital;
+  font-size:20px ;
+  font-weight: 700px;
+
+}
+.Project-links div {
+  margin: 16px 16px 0;
+  width: calc(100%-32px);
+  height: 100px;
+  background-color: #f2f2f2;
+}
+ .Project-links div h3{
+  font-family:Merriweather ital;
+  font-size: 28px;
+  font-weight: 100px;
+  line-height: 100px;
+  color: #111;
+  text-align: center;
+ }
+ .photo-mine{
+  width: 100%;
+  height: calc(100vh-100px);
+  
+  background-repeat:no-repeat ;
+  background-position: center;
+  background-size: cover
+ }
+ .bio-mine h1{
+  font-family:Merriweather ital;
+  font-size: 24px;
+  font-weight: 100px;
+  margin-top: 10px;
+ }
+ .bio-mine h2{
+  font-family:Merriweather ital;
+  font-size: 20px;
+  font-weight: 40px;
+ }
+ .back-ground{
+  width: 100%;
+  height: 100vh
+ }
+ h1{
+  font-family:Merriweather ital;
+  font-size: 24px ;
+  font-weight: 700px;
+ }
+ .contact-mine h1{
+  font-family:Merriweather ital;
+  font-size: 20px;
+  font-weight: 100px;
+  margin-top: 20px;
+ }
+ .contact-mine h2{
+  font-family:Merriweather ital;
+  font-size: 20px;
+  font-weight: 40px;
+ }
+ form{
+  width: 300px;
+  margin: 16px 16px 0;
+  
+  height: 100px;
+  text-align: center;
+  margin: 100px;
+ }
+
+ input{
+  width: 100%;
+  
+ }
+ 
+ input{
+  outline: none;
+  border: 1px solid #ddd;
+ }
+ input:focus{
+  box-shadow:0 o 4px rgba(255, 0,0,0.5) ;
+  border: 1px solid rgb(255, 0,0);
+ }
+ ::placeholder{
+  color: red;
+  opacity: 1;
+ }
+ :-ms-input-placeholder{
+  color: red;
+  
+ }
+ ::-ms-input-placeholder{
+  color: red;
+  opacity: 1;
+ }
+  footer{
+  width:calc(100%-80px);
+  padding: 40px 40px;
+  margin-top: 20px;
+  background-color: #111;
+  overflow: hidden;
+
+}
+footer ul{
+   width: fit-content;
+   float: left;
+   padding-left: 20px;
+
+}
+footer ul li{
+  display: block;
+   list-style:none;
+}
+footer ul li a{
+  font-family:cursive;
+  font-size: 24px;
+  color: #fff;
+  line-height: 40px;
+}
+.footer-sm{
+  width: 50px;
+  float:right;
+}
+.footer-sm img{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
